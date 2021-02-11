@@ -2,8 +2,18 @@
 The home for all things related to the Badgerloop Testing Framework
 
 ## Table of Contents
-1. [Hardware Emulation](#hardware-emulation)
-   1. [Hardware Control Board]()
+- [Badgerloop Testing Framework](#badgerloop-testing-framework)
+  - [Table of Contents](#table-of-contents)
+  - [Hardware Emulation](#hardware-emulation)
+    - [Hardware Emulation Board](#hardware-emulation-board)
+      - [List of devices](#list-of-devices)
+    - [Raspberry Pi Controller](#raspberry-pi-controller)
+  - [Test Configurations](#test-configurations)
+    - [Writing Tests](#writing-tests)
+    - [Running Tests](#running-tests)
+      - [Raspberry Pi Runner](#raspberry-pi-runner)
+      - [Logging Server](#logging-server)
+  - [Definitions](#definitions)
 
 
 ## Hardware Emulation
@@ -27,7 +37,7 @@ Running tests will consist of 3 parts. A hardware configuration, a corresponding
 
 
 #### Raspberry Pi Runner
-The Raspberry Pi will configure it's I/O pins in accordance with the [configuration file](#writing-tests) using it's own framework (probably PyTest). Once it's state machine is setup it will then configure the UUT to run it's corresponding test. Logs and results of both tests will be combined and uploaded to a logging server. 
+The Raspberry Pi will configure     it's I/O pins in accordance with the [configuration file](#writing-tests) using it's own framework (probably PyTest). Once it's state machine is setup it will then configure the UUT to run it's corresponding test. Logs and results of both tests will be combined and uploaded to a logging server. 
 
 #### Logging Server
 TBD
