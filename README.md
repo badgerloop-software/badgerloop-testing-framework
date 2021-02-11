@@ -27,6 +27,7 @@ The hardware emulation board is essentially a Raspberry Pi hat with access to an
 - 1x I<sup>2</sup>C [MCP23017](https://www.microchip.com/wwwproducts/en/MCP23017)
 - 1x [LT3092](https://www.analog.com/media/en/technical-documentation/data-sheets/lt3092.pdf) Current Source
 ### Raspberry Pi Controller
+*Note that the Raspberry Pi Controller and Runner are the same board*
 The Raspberry Pi will configue these pins as inputs and outputs and report their status to the [runner](#raspberry-pi-runner)
 ## Test Configurations
 Tests will be setup by configuration file. After a developer has configured a test they will upload it to the [Raspberry Pi runner](#raspberry-pi-runner) where it will setup the [hardware emulation board](#hardware-emulation-board) and configure the MCU to run the tests.
@@ -37,7 +38,8 @@ Running tests will consist of 3 parts. A hardware configuration, a corresponding
 
 
 #### Raspberry Pi Runner
-The Raspberry Pi will configure     it's I/O pins in accordance with the [configuration file](#writing-tests) using it's own framework (probably PyTest). Once it's state machine is setup it will then configure the UUT to run it's corresponding test. Logs and results of both tests will be combined and uploaded to a logging server. 
+*Note that the Raspberry Pi Runner and Controller are the same board*
+The Raspberry Pi will configure it's I/O pins in accordance with the [configuration file](#writing-tests) using it's own framework (probably PyTest). Once it's state machine is setup it will then configure the UUT to run it's corresponding test. Logs and results of both tests will be combined and uploaded to a logging server. 
 
 #### Logging Server
 TBD
