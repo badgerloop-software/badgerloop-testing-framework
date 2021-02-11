@@ -24,7 +24,7 @@ The hardware emulation board is essentially a Raspberry Pi hat with access to an
 #### List of devices
 - 2x [REF194GSZ](https://www.digikey.com/en/products/detail/analog-devices-inc/REF194GSZ-REEL7/995868) Analog to Digital Converter
 - 2x [MAX525BCAP](https://www.digikey.com/en/products/detail/maxim-integrated/MAX525BCAP/948076) Digital to Analog Converter
-- 1x I<sup>2</sup>C [MCP23017](https://www.microchip.com/wwwproducts/en/MCP23017)
+- 1x I<sup>2</sup>C [MCP23017](https://www.microchip.com/wwwproducts/en/MCP23017) I/O Expander
 - 1x [LT3092](https://www.analog.com/media/en/technical-documentation/data-sheets/lt3092.pdf) Current Source
 ### Raspberry Pi Controller
 *Note that the Raspberry Pi Controller and Runner are the same board*
